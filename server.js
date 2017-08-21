@@ -70,6 +70,9 @@ app.get('/article-three', function (req, res) {
    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
 });
 
+app.get('/ui/main.js', function (req, res) {
+   res.sendFile(path.join(__dirname, 'ui', 'main.js')); 
+});
 var articleOne = {
     title: 'Article One | Tushar Maurya',
     heading: 'Article One',
